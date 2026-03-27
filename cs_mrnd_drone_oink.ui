@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>561</width>
+    <height>862</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>220</y>
+      <width>261</width>
+      <height>261</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status_label">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>60</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Status :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>60</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Not Connected</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Camera_Angle">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Cam Angle:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cam_angle_val">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>60</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="x_val">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Xval_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>X value:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Yval_label">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>100</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Y value:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="y_val">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>100</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="z_val">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>100</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Zval_label">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>100</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Z value:</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="mapView">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>520</y>
+      <width>260</width>
+      <height>260</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelforCamera">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>190</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Mobile Robot Camera&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelforArial">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>490</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Arial Camera&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nav Algo:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>20</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nav:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nav_val">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nav_selected">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Default Nav</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelforTopic">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>140</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; color:#ffaaff;&quot;&gt;Pansy's Surveillance Camera&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>561</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionCall_CS_sript"/>
+    <addaction name="separator"/>
+    <addaction name="actionStart_Simulation"/>
+    <addaction name="separator"/>
+    <addaction name="actionStop_Simulation"/>
+   </widget>
+   <widget class="QMenu" name="menuCamera">
+    <property name="title">
+     <string>Camera</string>
+    </property>
+    <addaction name="actionArialShot"/>
+    <addaction name="separator"/>
+    <addaction name="actionLive_camera"/>
+    <addaction name="separator"/>
+    <addaction name="actionSnapShot"/>
+    <addaction name="separator"/>
+    <addaction name="actionRotate_camera"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuDrone">
+    <property name="title">
+     <string>Drone</string>
+    </property>
+    <addaction name="actionWaypoint_init"/>
+    <addaction name="separator"/>
+    <addaction name="actionPetrol_drone"/>
+    <addaction name="separator"/>
+    <addaction name="actionDrone_pause"/>
+   </widget>
+   <widget class="QMenu" name="menumobileRobot">
+    <property name="title">
+     <string>mobileRobot</string>
+    </property>
+    <addaction name="actionmove_Dummy"/>
+    <addaction name="separator"/>
+    <addaction name="actionmove_Robot"/>
+    <addaction name="separator"/>
+    <addaction name="actionpause_Robot"/>
+    <addaction name="separator"/>
+    <addaction name="actionset_Algo_num"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuCamera"/>
+   <addaction name="menuDrone"/>
+   <addaction name="menumobileRobot"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCall_CS_sript">
+   <property name="text">
+    <string>Call_CS_sript</string>
+   </property>
+  </action>
+  <action name="actionSnapShot">
+   <property name="text">
+    <string>SnapShot</string>
+   </property>
+  </action>
+  <action name="actionStart_Simulation">
+   <property name="text">
+    <string>Start_Simulation</string>
+   </property>
+  </action>
+  <action name="actionStop_Simulation">
+   <property name="text">
+    <string>Stop_Simulation</string>
+   </property>
+  </action>
+  <action name="actionRotate_camera">
+   <property name="text">
+    <string>Rotate_camera</string>
+   </property>
+  </action>
+  <action name="actionRotate_N90">
+   <property name="text">
+    <string>Rotate_N90</string>
+   </property>
+  </action>
+  <action name="actionWaypoint_init">
+   <property name="text">
+    <string>Waypoint_init</string>
+   </property>
+  </action>
+  <action name="actionPetrol_drone">
+   <property name="text">
+    <string>Petrol_drone</string>
+   </property>
+  </action>
+  <action name="actionDrone_pause">
+   <property name="text">
+    <string>Drone_pause</string>
+   </property>
+  </action>
+  <action name="actionmove_Dummy">
+   <property name="text">
+    <string>move_Dummy</string>
+   </property>
+  </action>
+  <action name="actionmove_Robot">
+   <property name="text">
+    <string>move_Robot</string>
+   </property>
+  </action>
+  <action name="actionpause_Robot">
+   <property name="text">
+    <string>pause_Robot</string>
+   </property>
+  </action>
+  <action name="actionLive_camera">
+   <property name="text">
+    <string>Live_camera</string>
+   </property>
+  </action>
+  <action name="actionArialShot">
+   <property name="text">
+    <string>ArialShot</string>
+   </property>
+  </action>
+  <action name="actionset_Algo_num">
+   <property name="text">
+    <string>set_Algo_num</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
